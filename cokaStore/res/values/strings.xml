@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">cokaStore</string>
+    <string name="title_section1">客戶資料</string>
+    <string name="title_section2">預　　約</string>
+    <string name="title_section3">系統設定</string>
+    <string name="action_user">客戶資料</string>
+    <string name="action_booking">預　　約</string>
+    <string name="action_system">系統設定</string>
+    <string name="action_consumer">消費紀錄</string>
+    <string name="action_delete">刪除</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="action_search">查詢</string>
+    <string name="action_add">新增</string>
+    <string name="view_name">姓名</string>
+    <string name="view_phone">手機</string>
+    <string name="view_birth">生日</string>
+    <string name="view_mail">信箱</string>
+    <string name="title_activity_user_add">新增</string>
+    <string name="title_activity_user_edit">編輯</string>
+    <string name="title_activity_user_view">查看</string>
+    <string name="title_activity_alarm">提醒通知</string>
+    <string name="button_save">儲存</string>
+    <string name="button_cancel">取消</string>
+    <string name="view_habit">喜好</string>
+    <string name="view_ps">備註</string>
+    <string name="view_consumers">客戶名稱</string>
+    <string name="view_consumerDate">消費日期</string>
+    <string name="view_consumerPirce">消費金額</string>
+    <string name="view_consumerName">客戶姓名</string>
+    <string name="view_consumerContent">消費內容</string>
+    <string name="view_consumerDescribe">消費內容描述</string>
+    <string name="view_consumerPhoto">照片</string>
+    <string name="view_list_consumerDate">消費日期</string>
+    <string name="view_list_consumerPrice">金額</string>
+    <string name="view_period">到店頻率</string>
+    <string name="view_period_times">週/次</string>
+    <string name="recent_date">最近到店日期:</string>
+    <string name="YN_NOTIFICATION">通知</string>
+    <string name="view_alarm_notify">提醒通知</string>
+    <string name="view_month_birth">本月壽星</string>
+    <string name="view_recent_date">最近到店日期</string>
+    <string name="view_long_time_no_see">好久不見的名單</string>
+    <string name="view_periodtimes">到店頻率(週/次)</string>
+    <string name="view_confirm">確認</string>
+
+</resources>

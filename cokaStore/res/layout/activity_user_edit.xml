@@ -1,0 +1,238 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/textContentLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/userNameLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:focusable="true"
+	        android:focusableInTouchMode="true" >
+
+            <EditText
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="44dp"
+                android:ems="7"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/userNameView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/userName"
+                android:layout_alignBottom="@+id/userName"
+                android:layout_alignParentLeft="true"
+                android:text="@string/view_name" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/userPhoneLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/userPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:ems="7"
+                android:inputType="phone" />
+
+            <TextView
+                android:id="@+id/userPhoneView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/view_phone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/birthLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/birth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:ems="7"
+                android:focusable="false"
+                android:inputType="none" />
+
+            <TextView
+                android:id="@+id/BirthView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/view_birth" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mailLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:ems="7"
+                android:inputType="textEmailAddress" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/mailView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/mail"
+                android:layout_alignBottom="@+id/mail"
+                android:layout_alignParentLeft="true"
+                android:text="@string/view_mail" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/photoView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textContentLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textContentLayout"
+        android:onClick="uploadPhoto"
+        android:src="@android:drawable/ic_menu_camera" />
+
+    <RelativeLayout
+        android:id="@+id/peroidLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textContentLayout" >
+
+        <TextView
+            android:id="@+id/peroidView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/period"
+            android:layout_alignBottom="@+id/period"
+            android:layout_alignParentLeft="true"
+            android:text="@string/view_period" />
+
+        <EditText
+            android:id="@+id/period"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/peroidView"
+            android:ems="2"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/period_times"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/period"
+            android:text="@string/view_period_times" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/userHabitLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/peroidLayout" >
+
+        <TextView
+            android:id="@+id/userHabitView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/userHabit"
+            android:layout_alignBottom="@+id/userHabit"
+            android:layout_alignParentLeft="true"
+            android:text="@string/view_habit" />
+
+        <EditText
+            android:id="@+id/userHabit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/userHabitView"
+            android:ems="7"
+            android:inputType="textMultiLine" >
+
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/userPsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/userHabitLayout" >
+
+        <TextView
+            android:id="@+id/userPsView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/userPs"
+            android:layout_alignBottom="@+id/userPs"
+            android:layout_alignParentLeft="true"
+            android:text="@string/view_ps" />
+
+        <EditText
+            android:id="@+id/userPs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/userPsView"
+            android:ems="7"
+            android:inputType="textMultiLine" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/userPsLayout"
+        android:gravity="left" >
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="save"
+            android:text="@string/button_save" />
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="cancel"
+            android:text="@string/button_cancel" />
+    </LinearLayout>
+
+</RelativeLayout>

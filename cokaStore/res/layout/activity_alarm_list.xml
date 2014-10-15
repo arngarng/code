@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/alarm_linearlayout"
+        android:gravity="center_vertical"
+        android:text="@string/view_month_birth"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/consumer_linearlayout" >
+
+        <TextView
+            android:id="@+id/textSetting"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.2"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/view_name" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="0.23"
+            android:text="@string/view_phone" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="0.27"
+            android:text="@string/view_birth" />
+
+        <TextView
+            android:id="@+id/programSetting"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="0.3"
+            android:text="@string/view_recent_date" />
+        
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/monthBirth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/alarm_linearlayout"
+        android:gravity="center_vertical"
+        android:text="@string/view_long_time_no_see"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/consumer_linearlayout" >
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="0.2"
+            android:text="@string/view_name" />
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="0.23"
+            android:text="@string/view_phone" />
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="0.27"
+            android:text="@string/view_periodtimes" />
+
+        <TextView
+            android:id="@+id/TextView05"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="0.3"
+            android:text="@string/view_recent_date" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/longTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/confirmButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:text="@string/view_confirm" 
+        android:onClick="confirm"/>
+
+</LinearLayout>

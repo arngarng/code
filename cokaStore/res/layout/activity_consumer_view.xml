@@ -1,0 +1,185 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false" >
+
+    <RelativeLayout
+        android:id="@+id/consumerNameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/consumerNameView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/consumerName"
+            android:layout_alignBottom="@+id/consumerName"
+            android:layout_alignParentLeft="true"
+            android:text="@string/view_consumerName" />
+
+        <EditText
+            android:id="@+id/consumerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/consumerNameView"
+            android:ems="10"
+            android:focusable="false"
+            android:completionThreshold="1"
+            android:inputType="textEmailAddress" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/consumerDateLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" 
+        android:layout_below="@+id/consumerNameLayout" >
+
+        <TextView
+            android:id="@+id/ConsumerDateView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/consumerDate"
+            android:layout_alignBottom="@+id/consumerDate"
+            android:layout_alignParentLeft="true"
+            android:text="@string/view_consumerDate" />
+
+        <EditText
+            android:id="@+id/consumerDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/ConsumerDateView"
+            android:focusable="false"
+            android:ems="10">
+
+        </EditText>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/consumerDescribeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/consumerContentLayout" >
+
+        <TextView
+            android:id="@+id/consumerDescribeView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/consumerDescribe"
+            android:layout_alignBottom="@+id/consumerDescribe"
+            android:layout_alignParentLeft="true"
+            android:text="@string/view_consumerDescribe" />
+
+        <EditText
+            android:id="@+id/consumerDescribe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/consumerDescribeView"
+            android:ems="7"
+            android:focusable="false"
+            android:inputType="textMultiLine" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/consumerContentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/consumerPriceLayout" >
+
+        <TextView
+            android:id="@+id/consumerContentView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/consumerContent"
+            android:layout_alignBottom="@+id/consumerContent"
+            android:text="@string/view_consumerContent" />
+
+        <EditText
+            android:id="@+id/consumerContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/consumerContentView"
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="textMultiLine" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/consumerPhothLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/consumerDescribeLayout"
+        android:layout_marginTop="15dp" >
+
+        <TextView
+            android:id="@+id/consumerPhothView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/view_consumerPhoto" />
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/photoHorizontalScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/consumerPhothLayout" >
+
+        <LinearLayout
+            android:id="@+id/phtoGallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    
+
+    <RelativeLayout
+        android:id="@+id/consumerPriceLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/consumerDateLayout"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/ConsumerPriceView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/view_consumerPirce" />
+
+        <EditText
+            android:id="@+id/consumerPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/ConsumerPriceView"
+            android:ems="7"
+            android:focusable="false"
+            android:inputType="number" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

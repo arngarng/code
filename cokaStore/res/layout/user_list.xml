@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/list_userPic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_action_person" />
+
+	<TextView
+	    android:id="@+id/list_userId"
+	    android:layout_width="wrap_content"
+	    android:layout_height="80dp"
+	    android:gravity="center_vertical"
+	    android:minEms="1"
+	    android:textAppearance="?android:attr/textAppearanceMedium"
+	    android:visibility="invisible" />
+
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="80dp" >
+
+		<TextView
+		    android:id="@+id/list_userName"
+		    android:layout_width="wrap_content"
+		    android:layout_height="60dp"
+		    android:layout_alignRight="@+id/list_userPhone"
+		    android:gravity="center_vertical"
+		    android:minEms="5"
+		    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		<TextView
+		    android:id="@+id/list_userPhone"
+		    android:layout_width="wrap_content"
+		    android:layout_height="20dp"
+		    android:layout_alignParentLeft="true"
+		    android:layout_below="@+id/list_userName"
+		    android:minEms="5"
+		    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+		<TextView
+		    android:id="@+id/list_userDate_view"
+		    android:layout_width="match_parent"
+		    android:layout_height="60dp"
+		    android:layout_above="@+id/list_userPhone"
+		    android:layout_marginRight="50dp"
+		    android:layout_toRightOf="@+id/list_userName"
+		    android:gravity="bottom|right"
+		    android:text="@string/recent_date"
+		    android:visibility="visible" />
+
+		<TextView
+		    android:id="@+id/list_userDate"
+		    android:layout_width="match_parent"
+		    android:layout_height="20dp"
+		    android:layout_alignLeft="@+id/list_userDate_view"
+		    android:layout_alignParentBottom="true"
+		    android:layout_marginRight="10dp"
+		    android:gravity="bottom|right"
+		    android:minEms="5" />
+
+	</RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:background="@drawable/consumer_linearlayout">
+
+    <TextView
+        android:id="@+id/list_consumerDateView"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="0.3"
+        android:gravity="center_vertical"
+        android:text="@string/view_list_consumerDate"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/list_consumerNameView"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="0.25"
+        android:gravity="center_vertical"
+        android:text="@string/view_consumerName"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/list_consumerContentView"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="0.30"
+        android:gravity="center_vertical"
+        android:text="@string/view_consumerContent"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/list_consumerPriceView"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="0.15"
+        android:gravity="center_vertical"
+        android:text="@string/view_list_consumerPrice"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/consumerListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>

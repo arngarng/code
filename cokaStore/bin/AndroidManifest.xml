@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cokastore"
+    android:installLocation="internalOnly"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <!-- 取得執行中的activity -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+
+    
+    <!-- 接收開機完成廣播  -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- Splash screen -->
+        <activity
+            android:name="com.cokastore.splash.SplashScreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.cokastore.MainActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name="com.cokastore.AlarmNotifyActivity"
+            android:label="@string/title_activity_alarm" >
+        </activity>
+        <activity
+            android:name="com.cokastore.UserAddActivity"
+            android:label="@string/title_activity_user_add" >
+        </activity>
+        <activity
+            android:name="com.cokastore.UserEditActivity"
+            android:label="@string/title_activity_user_edit" >
+        </activity>
+       	<activity
+            android:name="com.cokastore.UserViewActivity"
+            android:label="@string/title_activity_user_view" >
+        </activity>
+        <activity
+            android:name="com.cokastore.ConsumerAddActivity"
+            android:label="@string/title_activity_user_add" >
+        </activity>
+        <activity
+            android:name="com.cokastore.ConsumerEditActivity"
+            android:label="@string/title_activity_user_edit" >
+        </activity>
+        <activity
+            android:name="com.cokastore.ConsumerViewActivity"
+            android:label="@string/title_activity_user_view" >
+        </activity>
+        
+        <!-- 每日的自動提醒 -->
+        <receiver android:name="com.cokastore.res.AlarmReceiver" />
+        
+        <!-- 當手機重開機，所要執行的程式。 -->
+        <receiver android:name="com.cokastore.res.AlarmInitReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        
+    </application>
+
+</manifest>
